@@ -8,4 +8,6 @@ def index(request):
     # return HttpResponse("Hello, world. You're at the articles index.")
 
 def article_detail(request, slug):
-    return HttpResponse(slug)
+    article = Article.objects.get(slug=slug)
+    return render(request, 'articles/show.html', {'article': article})
+    # return HttpResponse(slug)

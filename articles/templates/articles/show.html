@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-header">
+            <b>
+                {{ article.title }}
+
+            </b>
+
+        </div>
+        <div class="card-body">
+            
+            <p> {{article.description}}</p>
+        </div>
+    </div>
+{%endblock%}

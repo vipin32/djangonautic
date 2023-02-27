@@ -7,7 +7,6 @@
             <h2><a href="{% url 'articles:article_detail' slug=article.slug %}">{{ article.title }}</a></h2>
             <p>{{article.description}}</p>
             <small>{{article.date}}</small>
-
         </div>
     {% endfor %}
 {% endblock %}
