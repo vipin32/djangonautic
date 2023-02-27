@@ -6,3 +6,6 @@ def index(request):
     articles = Article.objects.all().order_by('date')
     return render(request, 'articles/index.html', {'articles': articles})
     # return HttpResponse("Hello, world. You're at the articles index.")
+
+def article_detail(request, slug):
+    return HttpResponse(slug)
